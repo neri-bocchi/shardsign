@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>shardsign — spike día 1</title>
+<style>
+  body { font: 14px/1.5 ui-monospace, Menlo, monospace; margin: 24px; background: #fff; color: #111; }
+  button { font: inherit; padding: 6px 12px; }
+  pre { background: #f4f4f4; padding: 12px; white-space: pre-wrap; }
+  @media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } pre { background: #222; } }
+</style>
+</head>
+<body>
+<h1>Spike día 1: parte user en WASM contra signer-a y signer-b en Go</h1>
+<p><label><input type="checkbox" id="cache"> Reusar preparams guardados en localStorage (solo spike)</label></p>
+<button id="run">Correr DKG + 2 firmas</button>
+<pre id="log"></pre>
+<script src="wasm_exec.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

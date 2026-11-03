@@ -1,0 +1,19 @@
+# build outputs
+spike/bin/
+contracts/out/
+contracts/cache/
+
+# generated locally, contain secret key material (preparams = Paillier keys)
+**/testdata/preparams.json
+spike/devpeer/preparams.json
+
+# built WASM artifacts (make with: see CLAUDE.md)
+spike/devpeer/static/*.wasm
+spike/devpeer/static/*.wasm.br
+spike/devpeer/static/wasm_exec.js
+
+# local chain state (make chain)
+.anvil/
+
+# written by scripts/smoke.sh
+deployments/local.json
